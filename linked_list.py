@@ -1,3 +1,43 @@
+class node():
+    def __init__(self,data):
+        self.data = data #to store the data
+        self.next = None #point to next node initially none
+
+
+node1 = node(10)
+node2 = node(20)
+node3 = node(30)
+
+node1.next = node2
+node2.next = node3
+
+current = node1
+while current:
+    print(current.data)
+    current = current.next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Solution:
     def addTwoNumbers(self, l1, l2):
         dummy = ListNode(0)   # start node
@@ -18,4 +58,6 @@ class Solution:
             if l2: l2 = l2.next
 
         return dummy.next
+
+
  
